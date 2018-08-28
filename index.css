@@ -1,0 +1,97 @@
+/*
+* @Author: Vera
+* @Date:   2018-08-13 16:59:27
+* @Last Modified by:   Vera
+* @Last Modified time: 2018-08-16 23:12:59
+*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    padding: 20px;
+}
+
+#container {
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    border: 5px double black;
+    box-shadow: 10px 10px 5px gray;
+
+
+}
+#picture { 
+    width: 4800px; 
+    height: 600px; 
+    position: absolute; 
+    z-index: 1;
+}
+#picture img {
+    float: left;
+    width: 600px;
+    height: 600px;
+
+}
+
+/*小圆点样式*/
+#buttons {
+    /*光标样式*/
+    position: absolute;
+    height: 10px;
+    width: 120px;
+    z-index: 2;
+    bottom: 20px;
+    left: 250px;
+
+
+}
+#buttons span {
+    margin-right: 5px; 
+    cursor: pointer;
+    float: left;
+    /*画圆点*/
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #333;
+}
+#buttons .on {
+    background: orangered;
+}
+
+/*左右箭头样式*/
+.arrow {
+    cursor: pointer;
+    display: none;
+    line-height: 49px;
+    text-align: center;
+    font-size: 46px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    background-color: rgba(0,0,0,.3);
+    top: 280px;
+
+}
+.arrow:hover {
+    background-color: rgba(0,0,0,.7)
+}
+#container:hover .arrow{
+    display: block;
+}
+
+#prev {
+    left: 20px;
+}
+#next {
+    right: 20px;
+}
